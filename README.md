@@ -1,40 +1,42 @@
+# Car Sales-Dashboard
+
+### Dashboard Link : https://app.powerbi.com/groups/me/reports/eb9a6f10-c091-4e4a-ac33-0119d69f7c6c/915ea6ba0d32993ddcfb?experience=power-bi
 ## Problem Statement
 
-This dashboard provides insights into the experiences and satisfaction of professionals in various data-related job roles. It enables organizations and recruiters to understand how professionals from different job titles, such as Data Analysts, Data Scientists, Data Engineers, Data Architects, and Database Developers, experience challenges and success in their careers. It highlights key factors such as salary satisfaction, work-life balance, favorite programming languages, and the difficulty of breaking into the data field.
+The Car Sales Dashboard provides a comprehensive analysis of car sales data across multiple dimensions such as customers, employees, orders, products, and office locations. It gives businesses the ability to track and assess sales performance, employee contributions, and product demand over time.
+This dashboard integrates data from various sources, including customers, employees, orders, products, product lines, and offices. It includes detailed data cleaning and filtering processes, where null values were removed, columns were sorted, and proper data types were assigned. New columns were created and key measures such as yearly sales and most ordered products were calculated using DAX queries to enhance the depth of analysis.
 
-The dashboard also provides a breakdown of average salaries by job title and identifies areas where professionals might need more support, especially for those new to the data field. It gives a holistic view of the data community, helping companies make data-driven decisions about hiring, retention, and training.
+## Steps Followed:-
+•	Step 1: Loaded the dataset containing customer, employee, product, order, and office data into Power BI.
 
-### Steps Followed
+•	Step 2: Performed Data Cleaning by removing null values, sorting data, and changing data types to ensure consistency and accuracy.
 
-- **Step 1**: Load the data (CSV/Excel file) into Power BI Desktop.
-- **Step 2**: Open Power Query Editor and check for "Column Distribution," "Column Quality," and "Column Profile" to ensure there are no errors or missing values.
-- **Step 3**: Profile the dataset to ensure that null or irrelevant data is either removed or ignored for calculations like average salary or satisfaction ratings.
-- **Step 4**: Perform data transformation to prepare calculated columns for grouping professionals based on job titles (e.g., Data Analyst, Data Scientist).
-- **Step 5**: In the report view, apply theme colors and formatting for better visualization.
-  
-### Dashboard Components
+•	Step 3: Created new columns and measures from existing data, such as sales for 2003/2004, and calculated key metrics like the most ordered product using DAX queries.
 
-- **Total Number of Surveyees**: A **Card visual** is used to display the total number of participants in the survey.
-  
-- **Average Age of Surveyees**: Another **Card visual** shows the average age of all respondents, providing insight into the age demographics of professionals in the data field.
+•	Step 4: Extracted additional columns to enhance the depth of analysis and make the dashboard more detailed.
 
-- **Average Salary by Job Title**: A **Stacked Bar Chart** compares the average salary across different job titles such as Data Analyst, Data Scientist, Data Engineer, etc. This visualization helps to see salary distribution by role.
+## Dashboard Components
 
-- **Difficulty in Breaking into Data**: A **Pie Chart** displays the percentage of respondents who faced different levels of difficulty when first entering the data profession. This metric is crucial for understanding the challenges newcomers face in different job roles.
+Key metrics such as profit margins, and the most ordered product are displayed using Cards, offering a quick snapshot of the company’s overall performance.
+ The dashboard tracks sales trends over time, with a Line Chart showing Monthly sales growth or decline of Selected Year. Product performance is highlighted through a bar Charts , displaying the different product lines (such as classic cars and vintage cars) and their respective sales figures.
 
-- **Favorite Programming Language**: A **Column Chart** shows the most popular programming languages (e.g., Python, R, Java, JavaScript, C/C++) among different job titles. This helps to understand which languages are preferred by Data Analysts, Scientists, Engineers, etc.
+Column Charts visualize the quantity of cars ordered by product line, providing insights into customer preferences. Additionally, the dashboard allows for an in-depth analysis of employee performance, showing how many sales each employee is responsible for through Slicers that filter data by employee names.
 
-- **Average Salary (Donut Chart)**: A **Donut Chart** visualizes the overall average salary of all respondents, highlighting salary trends across the data industry.
+Geographical insights are presented using a Map visualization, which displays Employee and Sales distribution across various cities and countries, identifying key regions driving the most sales. Further product analysis is conducted through a Decomposition Tree, which breaks down Quantity Of Products Ordered and offers detailed insights into customer purchasing behaviours.
 
-- **Satisfaction with Salary**: A **Gauge visual** measures how satisfied professionals are with their current salary. The gauge shows how close the satisfaction level is to a desired threshold.
+The dashboard also tracks Sales made In particular year as compared to Previous  Year using KPIs, helping businesses assess their financial health and track improvements in profitability.
+For deeper analysis, Slicers allow users to filter data based on city, employee, month, and order year, offering flexibility in examining sales performance. 
 
-- **Satisfaction with Work-Life Balance**: Another **Gauge visual** measures satisfaction with work-life balance, providing insight into whether professionals are content with their working conditions.
+The interactive nature of the dashboard is enhanced by AI visuals, which enable users to navigate through different sections with ease by simply clicking on buttons.
 
-### Additional Insights
+ Visualizations like Pie Charts, Bar Charts, KPI tracking, and Tree Maps collectively provide insights into sales performance, employee contributions, and regional sales distribution, ensuring businesses can make informed decisions based on the data.
 
-- **Job Titles & Favorite Languages**: Data professionals have preferences for programming languages based on their roles. For example:
-  - Python is the most preffered Language AMONG professionals
-  - Data Engineers could favor languages like Python and R
-  - The chart breaks down these preferences, helping organizations understand skill demands.
+## Additional Insights
 
-- **Difficulty Levels**: Each job role experiences different levels of difficulty when first breaking into data. Some roles might have steeper learning curves, requiring more onboarding or training, and this is reflected in the pie chart.
+• Sales by Office:  The use of maps allows businesses to identify which cities or countries are generating the most sales. This insight can guide decisions about expanding operations or increasing marketing efforts in high-performing regions.
+
+•	Employee Contribution: Slicers allow businesses to evaluate each employee's contribution to the sales total. This data can inform performance reviews and help identify top-performing employees.
+
+•	Product Performance: The decomposition tree helps businesses understand which products are the most popular and which are underperforming. This information can be used to adjust inventory or product offerings based on demand.
+
+•	Profit Margins: By comparing year-on-year profit margins, the dashboard gives businesses a clear picture of how their profitability is evolving and where they might need to make improvements.
